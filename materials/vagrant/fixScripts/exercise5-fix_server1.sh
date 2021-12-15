@@ -7,5 +7,5 @@ echo '	PasswordAuthentication no' | sudo tee -a /home/vagrant/.ssh/config
 echo '	StrictHostKeyChecking no' | sudo tee -a /home/vagrant/.ssh/config
 echo '	IdentityFile /vagrant/home/vagrant/.ssh/private_key2' | sudo tee -a /home/vagrant/.ssh/config
 echo '	IdentitiesOnly yes' | sudo tee -a /home/vagrant/.ssh/config
-cp /vagrant/.vagrant/machines/server2/virtualbox/private_key /home/vagrant/.ssh/private_key2
-chmod 700 /home/vagrant/.ssh/private_key2
+echo 'cp /vagrant/.vagrant/machines/server1/virtualbox/private_key /home/vagrant/.ssh/private_key2' | sudo tee -a /home/vagrant/.bashrc
+echo 'chmod 700 /home/vagrant/.ssh/private_key2' | sudo tee -a /home/vagrant/.bashrc
